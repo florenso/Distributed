@@ -80,10 +80,7 @@
                maxThreads="150" SSLEnabled="true" scheme="https" secure="true"
                clientAuth="false" sslProtocol="TLS" />
     -->
-    <Connector port="443" protocol="org.apache.coyote.http11.Http11Protocol"
-               maxThreads="150" SSLEnabled="true" scheme="https" secure="true"
-			   keystoreFile="C:\tomcatkeystore" keystorePass="changeit"
-               clientAuth="false" sslProtocol="TLS" />
+    <Connector SSLEnabled="true" clientAuth="false" keystoreFile="C:\tomcatkeystore" keystorePass="changeit" maxThreads="150" port="443" protocol="org.apache.coyote.http11.Http11Protocol" scheme="https" secure="true" sslProtocol="TLS"/>
     <!-- Define an AJP 1.3 Connector on port 8009 -->
     <Connector port="8009" protocol="AJP/1.3" redirectPort="8443"/>
 
@@ -129,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="Week1_2" path="/Week1_2" reloadable="true" source="org.eclipse.jst.jee.server:Week1_2"/><Context docBase="Week1_3" path="/Week1_3" reloadable="true" source="org.eclipse.jst.jee.server:Week1_3"/><Context docBase="Week1_4" path="/Week1_4" reloadable="true" source="org.eclipse.jst.jee.server:Week1_4"/></Host>
+      <Context docBase="Week1_2" path="/Week1_2" reloadable="true" source="org.eclipse.jst.jee.server:Week1_2"/><Context docBase="Week1_3" path="/Week1_3" reloadable="true" source="org.eclipse.jst.jee.server:Week1_3"/><Context docBase="Week1_4" path="/Week1_4" reloadable="true" source="org.eclipse.jst.jee.server:Week1_4"/><Context docBase="JSPTest" path="/JSPTest" reloadable="true" source="org.eclipse.jst.jee.server:JSPTest"/></Host>
     </Engine>
   </Service>
 </Server>
