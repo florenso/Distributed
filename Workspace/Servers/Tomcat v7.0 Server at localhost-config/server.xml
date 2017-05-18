@@ -126,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="10_start" path="/10_start" reloadable="true" source="org.eclipse.jst.jee.server:10_start"/><Context docBase="12_AantalHits" path="/12_AantalHits" reloadable="true" source="org.eclipse.jst.jee.server:12_AantalHits"/><Context docBase="17_ForwardDemo" path="/17_ForwardDemo" reloadable="true" source="org.eclipse.jst.jee.server:17_ForwardDemo"/><Context docBase="13_SecurityDemo" path="/13_SecurityDemo" reloadable="true" source="org.eclipse.jst.jee.server:13_SecurityDemo"/><Context docBase="14_CookieDemo" path="/14_CookieDemo" reloadable="true" source="org.eclipse.jst.jee.server:14_CookieDemo"/><Context docBase="15_SessionDemo" path="/15_SessionDemo" reloadable="true" source="org.eclipse.jst.jee.server:15_SessionDemo"/><Context docBase="16_RedirectDemo" path="/16_RedirectDemo" reloadable="true" source="org.eclipse.jst.jee.server:16_RedirectDemo"/><Context docBase="11_EersteServlet" path="/11_EersteServlet" reloadable="true" source="org.eclipse.jst.jee.server:11_EersteServlet"/><Context docBase="MijnIp" path="/MijnIp" reloadable="true" source="org.eclipse.jst.jee.server:MijnIp"/><Context docBase="MyCookie" path="/MyCookie" reloadable="true" source="org.eclipse.jst.jee.server:MyCookie"/></Host>
+      <Context docBase="Week1_2" path="/Week1_2" reloadable="true" source="org.eclipse.jst.jee.server:Week1_2"/></Host>
     </Engine>
   </Service>
 </Server>

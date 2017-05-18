@@ -11,7 +11,7 @@ tmp/
 *.swp
 *~.nib
 local.properties
-.settings/
+#.settings/
 .loadpath
 .recommenders
 
@@ -98,7 +98,7 @@ mvn.properties
 #.classpath
 .fbprefs
 #.project
-.settings
+#.settings
 .idea
 *.iml
 *.asc
