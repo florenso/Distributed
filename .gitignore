@@ -95,9 +95,9 @@ work
 build.properties
 mvn.properties
 .checkstyle
-.classpath
+#.classpath
 .fbprefs
-.project
+#.project
 .settings
 .idea
 *.iml
