@@ -58,6 +58,7 @@ public class AantalHits extends HttpServlet {
 			s2 = "            Aantal hits: " + ++aantal + "\n";
 			try {
 				PrintWriter writer = new PrintWriter("counter.txt", "UTF-8");
+				writer.println(aantal);
 				writer.close();
 			} catch (IOException e) {
 				System.out.println("write failed");
