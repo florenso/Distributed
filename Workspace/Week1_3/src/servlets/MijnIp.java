@@ -19,7 +19,7 @@ public class MijnIp extends HttpServlet
    {
 	   
       response.setContentType("text/html");
-      
+      //request.getRemoteAddr()
       PrintWriter out = response.getWriter();
       String s =
       "<!doctype html public \"-//w3c//dtd html 4.0 Transitional//EN\">\n" +
@@ -32,7 +32,7 @@ public class MijnIp extends HttpServlet
       "   <body bgcolor=\"#8AAFED\">\n" +
       "      <center>\n" +
       "         <h1>\n" +
-      "            IP: " + request.getRemoteUser() + "\n" +
+      "            IP: " + request.getRemoteAddr() + "\n" +
       "         </h1>\n" +
       "      </center>\n" +
       "   </body>\n" +
