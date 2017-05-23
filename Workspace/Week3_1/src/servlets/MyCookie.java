@@ -34,6 +34,7 @@ public class MyCookie extends HttpServlet {
 		
 		try {
 			//OPEN DATABASE
+			// maak een mapje database naast je eclipse.exe
 			Class.forName("org.sqlite.JDBC");
 			String url = "jdbc:sqlite:database/week3_1.sqlite";
 			Connection con = DriverManager.getConnection(url);
