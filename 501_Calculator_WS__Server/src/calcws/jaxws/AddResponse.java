@@ -1,6 +1,8 @@
 
 package calcws.jaxws;
 
+import java.math.BigInteger;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -13,14 +15,14 @@ import javax.xml.bind.annotation.XmlType;
 public class AddResponse {
 
     @XmlElement(name = "return", namespace = "")
-    private int _return;
+    private BigInteger _return;
 
     /**
      * 
      * @return
-     *     returns int
+     *     returns BigInteger
      */
-    public int getReturn() {
+    public BigInteger getReturn() {
         return this._return;
     }
 
@@ -29,7 +31,7 @@ public class AddResponse {
      * @param _return
      *     the value for the _return property
      */
-    public void setReturn(int _return) {
+    public void setReturn(BigInteger _return) {
         this._return = _return;
     }
 

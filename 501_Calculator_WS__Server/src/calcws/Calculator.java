@@ -2,16 +2,19 @@
 package calcws;
 
 import javax.jws.WebService;
+
+import java.math.BigInteger;
+
 import javax.jws.WebParam;
 
 @WebService
 public class Calculator {
     
-    public int add(@WebParam(name="a") int a, 
-    		       @WebParam(name="b") int b) 
+    public BigInteger add(@WebParam(name="a") BigInteger a, 
+    		       @WebParam(name="b") BigInteger b) 
     {
     	System.out.println("request add(" + a + "," + b + ")");
-    	int som = a+b;
+    	BigInteger som = a.add(b);
     	System.out.println("return " + som);
         return som;
     }

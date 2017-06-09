@@ -1,6 +1,8 @@
 
 package calcws.jaxws;
 
+import java.math.BigInteger;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -16,16 +18,16 @@ import javax.xml.bind.annotation.XmlType;
 public class Add {
 
     @XmlElement(name = "a", namespace = "")
-    private int a;
+    private BigInteger a;
     @XmlElement(name = "b", namespace = "")
-    private int b;
+    private BigInteger b;
 
     /**
      * 
      * @return
-     *     returns int
+     *     returns BigInteger
      */
-    public int getA() {
+    public BigInteger getA() {
         return this.a;
     }
 
@@ -34,16 +36,16 @@ public class Add {
      * @param a
      *     the value for the a property
      */
-    public void setA(int a) {
+    public void setA(BigInteger a) {
         this.a = a;
     }
 
     /**
      * 
      * @return
-     *     returns int
+     *     returns BigInteger
      */
-    public int getB() {
+    public BigInteger getB() {
         return this.b;
     }
 
@@ -52,7 +54,7 @@ public class Add {
      * @param b
      *     the value for the b property
      */
-    public void setB(int b) {
+    public void setB(BigInteger b) {
         this.b = b;
     }
 

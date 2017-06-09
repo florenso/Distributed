@@ -7,14 +7,14 @@
 
   <xs:complexType name="add">
     <xs:sequence>
-      <xs:element name="a" type="xs:int"/>
-      <xs:element name="b" type="xs:int"/>
+      <xs:element name="a" type="xs:integer"/>
+      <xs:element name="b" type="xs:integer"/>
     </xs:sequence>
   </xs:complexType>
 
   <xs:complexType name="addResponse">
     <xs:sequence>
-      <xs:element name="return" type="xs:int"/>
+      <xs:element name="return" type="xs:integer"/>
     </xs:sequence>
   </xs:complexType>
 </xs:schema>

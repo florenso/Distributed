@@ -1,6 +1,8 @@
 
 package calcws;
 
+import java.math.BigInteger;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
@@ -16,8 +18,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="arg0" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="arg1" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="arg0" type="{http://www.w3.org/2001/XMLSchema}BigInteger"/>
+ *         &lt;element name="arg1" type="{http://www.w3.org/2001/XMLSchema}BigInteger"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -33,14 +35,14 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class Add {
 
-    protected int arg0;
-    protected int arg1;
+    protected BigInteger arg0;
+    protected BigInteger arg1;
 
     /**
      * Gets the value of the arg0 property.
      * 
      */
-    public int getArg0() {
+    public BigInteger getArg0() {
         return arg0;
     }
 
@@ -48,7 +50,7 @@ public class Add {
      * Sets the value of the arg0 property.
      * 
      */
-    public void setArg0(int value) {
+    public void setArg0(BigInteger value) {
         this.arg0 = value;
     }
 
@@ -56,7 +58,7 @@ public class Add {
      * Gets the value of the arg1 property.
      * 
      */
-    public int getArg1() {
+    public BigInteger getArg1() {
         return arg1;
     }
 
@@ -64,7 +66,7 @@ public class Add {
      * Sets the value of the arg1 property.
      * 
      */
-    public void setArg1(int value) {
+    public void setArg1(BigInteger value) {
         this.arg1 = value;
     }
 

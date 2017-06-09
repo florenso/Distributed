@@ -1,6 +1,8 @@
 
 package calcws;
 
+import java.math.BigInteger;
+
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebResult;
@@ -29,17 +31,17 @@ public interface Calculator {
      * @param arg1
      * @param arg0
      * @return
-     *     returns int
+     *     returns BigInteger
      */
     @WebMethod
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "add", targetNamespace = "http://calcws/", className = "calcws.Add")
     @ResponseWrapper(localName = "addResponse", targetNamespace = "http://calcws/", className = "calcws.AddResponse")
     @Action(input = "http://calcws/Calculator/addRequest", output = "http://calcws/Calculator/addResponse")
-    public int add(
+    public BigInteger add(
         @WebParam(name = "arg0", targetNamespace = "")
-        int arg0,
+        BigInteger arg0,
         @WebParam(name = "arg1", targetNamespace = "")
-        int arg1);
+        BigInteger arg1);
 
 }

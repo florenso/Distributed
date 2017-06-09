@@ -1,14 +1,16 @@
 //Calculator.java
 package calcws;
 
+import java.math.BigInteger;
+
 import javax.jws.WebService;
 
 @WebService
 public class Calculator {
     
-    public int add(int a, int b) {
+    public BigInteger add(BigInteger a, BigInteger b) {
     	System.out.println("request add(" + a + "," + b + ")");
-    	int som = a+b;
+    	BigInteger som = a.add(b);
     	System.out.println("return " + som);
         return som;
     }
