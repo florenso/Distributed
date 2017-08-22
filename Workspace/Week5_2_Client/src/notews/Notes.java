@@ -59,13 +59,13 @@ public interface Notes {
     /**
      * 
      * @return
-     *     returns java.util.List<notitions.Note>
+     *     returns Note[]
      */
     @WebMethod
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "getNotes", targetNamespace = "http://notews/", className = "notews.GetNotes")
     @ResponseWrapper(localName = "getNotesResponse", targetNamespace = "http://notews/", className = "notews.GetNotesResponse")
     @Action(input = "http://notews/Notes/getNotesRequest", output = "http://notews/Notes/getNotesResponse")
-    public List<Note> getNotes();
+    public Note[] getNotes();
 
 }

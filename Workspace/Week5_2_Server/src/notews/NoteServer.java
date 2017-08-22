@@ -55,7 +55,7 @@ public class NoteServer {
 		try {
 			con = getConnection();
 			PreparedStatement stmt1 = con.prepareStatement("select rangnummer, tijdstip, tekst FROM Notes;");
-			stmt1.setString(1, "");
+			//stmt1.setString(1, "");
 			java.sql.ResultSet rs = stmt1.executeQuery();
 			while (rs.next()) {
 				Note note = new Note();
