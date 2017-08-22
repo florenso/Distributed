@@ -21,7 +21,7 @@ import org.w3c.dom.Text;
 
 class CreateDomXml {
 	public static void main(String[] args) {
-		String filepath = "C:/Users/Mier/workspaceJava/Week4_1/src";
+		String filepath = "C:/Users/koen/Documents/Git/Distributed/Workspace/Week4_1/src";
 		String nameFromFileName = "";
 		String verlanglijstje = "";
 		

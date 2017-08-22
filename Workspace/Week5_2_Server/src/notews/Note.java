@@ -1,4 +1,4 @@
-package calcws;
+package notews;
 
 public class Note {
 	public int rangnummer;

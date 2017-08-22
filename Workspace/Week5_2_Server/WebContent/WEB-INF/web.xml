@@ -10,14 +10,14 @@ Inc.//DTD Web Application 2.3//EN"
      </listener-class>
   </listener>
   <servlet>
-    <servlet-name>CalculatorWS</servlet-name>
+    <servlet-name>NoteWS</servlet-name>
     <servlet-class>
         com.sun.xml.ws.transport.http.servlet.WSServlet
      </servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
-    <servlet-name>CalculatorWS</servlet-name>
-    <url-pattern>/calculator</url-pattern>
+    <servlet-name>NoteWS</servlet-name>
+    <url-pattern>/note</url-pattern>
   </servlet-mapping>
 </web-app>

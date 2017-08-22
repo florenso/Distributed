@@ -1,5 +1,5 @@
 //NoteServer.java
-package calcws;
+package notews;
 
 import java.io.File;
 import java.sql.*;
@@ -8,13 +8,15 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.List;
 
+import javax.jws.WebParam;
 import javax.jws.WebService;
 
 @WebService
 public class NoteServer {
 
 
-	public boolean addNote(String tekst) {
+	public boolean addNote(@WebParam(name="text") String text) {
+		System.out.println(text);
 		Connection con;
 		boolean succes = false;
 		try {
@@ -23,7 +25,7 @@ public class NoteServer {
 			String query = "insert or ignore into Notes(tijdstip,tekst)\n" + "values(?, ?)";
 			PreparedStatement pstmt = con.prepareStatement(query);
 			pstmt.setString(1, "" + c.getTime());
-			pstmt.setString(2, tekst);
+			pstmt.setString(2, text);
 			succes = pstmt.executeUpdate() != 0;
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
@@ -31,7 +33,8 @@ public class NoteServer {
 		return succes;
 	}
 
-	public boolean removeNote(int noteNr) {
+	public boolean removeNote(@WebParam(name="id") int noteNr) {
+		System.out.println("notenr: " + noteNr);
 		Connection con;
 		boolean succes = false;
 		try {
@@ -85,7 +88,7 @@ public class NoteServer {
 		Statement stmt = con.createStatement();
 		stmt.executeUpdate("CREATE TABLE if not exists Notes (" + "rangnummer INTEGER PRIMARY KEY AUTOINCREMENT,"
 				+ "tijdstip   TEXT," + "tekst      TEXT" + ");");
-		con.close();
+		//con.close();
 }
 	
 }

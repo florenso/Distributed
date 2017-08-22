@@ -17,7 +17,7 @@ public class DOMValidateDTD {
 	public static void main(String args[]) {
 		try {
 			String port = "port";
-			String portNumber = "8100";
+			String portNumber = "80t80";
 			
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 			DocumentBuilder db = dbf.newDocumentBuilder();
