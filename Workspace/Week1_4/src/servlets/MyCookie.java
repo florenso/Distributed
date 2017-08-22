@@ -50,7 +50,7 @@ public class MyCookie extends HttpServlet
       "<br>\n"; 
       Cookie[] cookies = request.getCookies();
       String s2;
-      if (cookies[0] == null) 
+      if (cookies == null) 
       {
    	   	s2 = "No cookies";
       } 
